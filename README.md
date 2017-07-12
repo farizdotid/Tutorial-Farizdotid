@@ -5,4 +5,4 @@ Project ini berisi source code sederhana yang berasal dari tutorial web farizdot
 ● Radio Button Example
 
 ## Catatan
-Semua tutorial sederhana yang ada di web saya akan saya update di repo ini
+Semua tutorial sederhana yang ada di web saya akan saya update di repo ini.
