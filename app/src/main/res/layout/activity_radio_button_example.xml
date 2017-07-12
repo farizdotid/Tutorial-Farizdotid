@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.farizdotid.tutorialfarizdotid.RadioButtonExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berada di provinsi manakah Kota Bandung ?"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rgJawaban1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/rbJawaTimur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawa Timur" />
+
+            <RadioButton
+                android:id="@+id/rbJawaBarat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawa Barat" />
+
+            <RadioButton
+                android:id="@+id/rbJawaTengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawa Tengah" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnJawab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="JAWAB"/>
+    </LinearLayout>
+</RelativeLayout>
