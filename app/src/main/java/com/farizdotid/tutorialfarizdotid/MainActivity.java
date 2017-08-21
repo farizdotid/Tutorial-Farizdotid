@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.btnActRadio)
     Button btnActRadio;
+    @BindView(R.id.btnActDatePicker)
+    Button btnActDatePicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RadioButtonExample.class));
+            }
+        });
+
+        btnActDatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DatePickerActivity.class));
             }
         });
     }
