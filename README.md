@@ -2,7 +2,7 @@
 Project ini berisi source code sederhana yang berasal dari tutorial web farizdotid ( https://farizdotid.com/ ) .
 
 ## Contoh sederhana yang ada di repo ini 
-● Radio Button Example
+● Radio Button Example <br>
 ● Date Picker Example
 
 ## Catatan
