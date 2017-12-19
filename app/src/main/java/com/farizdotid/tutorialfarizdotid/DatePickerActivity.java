@@ -1,5 +1,6 @@
 package com.farizdotid.tutorialfarizdotid;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -36,6 +37,7 @@ public class DatePickerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new DatePickerDialog(DatePickerActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         myCalendar.set(Calendar.YEAR, year);
@@ -52,6 +54,4 @@ public class DatePickerActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
