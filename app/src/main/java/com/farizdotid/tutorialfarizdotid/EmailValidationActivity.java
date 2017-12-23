@@ -42,7 +42,7 @@ public class EmailValidationActivity extends AppCompatActivity {
     }
 
     public static boolean isValidEmail(String email) {
-        boolean validate = true;
+        boolean validate;
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
         String emailPattern2 = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+\\.+[a-z]+";
 
