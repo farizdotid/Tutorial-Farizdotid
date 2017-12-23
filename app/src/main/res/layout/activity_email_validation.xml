@@ -6,24 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.farizdotid.tutorialfarizdotid.MainActivity">
+    tools:context="com.farizdotid.tutorialfarizdotid.EmailValidationActivity">
 
-    <Button
-        android:id="@+id/btnActRadio"
+    <EditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RADIO BUTTON EXAMPLE"/>
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
 
     <Button
-        android:id="@+id/btnActDatePicker"
+        android:id="@+id/btnCek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATE PICKER EXAMPLE"/>
-
-    <Button
-        android:id="@+id/btnActEmailValidation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EMAIL VALIDATION EXAMPLE"/>
-
+        android:text="cek"/>
 </LinearLayout>

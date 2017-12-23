@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RadioButtonExample" />
-        <activity android:name=".DatePickerActivity"></activity>
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".EmailValidationActivity"></activity>
     </application>
 
 </manifest>
