@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnActDatePicker;
     @BindView(R.id.btnActEmailValidation)
     Button btnActEmailValidation;
+    @BindView(R.id.btnActImageCircle)
+    Button btnActImageCircle;
 
     private Unbinder unbinder;
 
@@ -47,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, EmailValidationActivity.class));
+            }
+        });
+
+        btnActImageCircle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ImageCircleActivity.class));
             }
         });
     }
