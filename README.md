@@ -4,6 +4,8 @@ Project ini berisi source code sederhana yang berasal dari tutorial web farizdot
 ## Contoh sederhana yang ada di repo ini 
 ● Radio Button Example <br>
 ● Date Picker Example
+● Email Validation Example
+● Image Circle Example
 
 ## Catatan
 Semua tutorial sederhana yang ada di web saya akan saya update di repo ini.
