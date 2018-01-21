@@ -3,8 +3,8 @@ Project ini berisi source code sederhana yang berasal dari tutorial web farizdot
 
 ## Contoh sederhana yang ada di repo ini 
 ● Radio Button Example <br>
-● Date Picker Example
-● Email Validation Example
+● Date Picker Example <br>
+● Email Validation Example <br>
 ● Image Circle Example
 
 ## Catatan
