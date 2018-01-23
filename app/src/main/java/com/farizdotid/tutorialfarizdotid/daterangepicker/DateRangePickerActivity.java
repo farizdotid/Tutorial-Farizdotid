@@ -71,11 +71,14 @@ public class DateRangePickerActivity extends AppCompatActivity {
                 mDateStart = formatDate.format(selectedDate.getStartDate().getTime());
                 mDateEnd = formatDate.format(selectedDate.getEndDate().getTime());
 
+                // set date start ke textview
                 tvStartDate.setText(mDateStart);
+                // set date end ke textview
                 tvEndDate.setText(mDateEnd);
             }
         });
 
+        // ini configurasi agar library menggunakan method Date Range Picker
         SublimeOptions options = new SublimeOptions();
         options.setCanPickDateRange(true);
         options.setPickerToShow(SublimeOptions.Picker.DATE_PICKER);
