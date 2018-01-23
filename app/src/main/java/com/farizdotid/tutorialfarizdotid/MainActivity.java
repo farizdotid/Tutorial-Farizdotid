@@ -6,6 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.farizdotid.tutorialfarizdotid.datepicker.DatePickerActivity;
+import com.farizdotid.tutorialfarizdotid.daterangepicker.DateRangePickerActivity;
+import com.farizdotid.tutorialfarizdotid.emailvalidation.EmailValidationActivity;
+import com.farizdotid.tutorialfarizdotid.imagecircle.ImageCircleActivity;
+import com.farizdotid.tutorialfarizdotid.radiobutton.RadioButtonExample;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -20,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnActEmailValidation;
     @BindView(R.id.btnActImageCircle)
     Button btnActImageCircle;
+    @BindView(R.id.btnActDateRangePicker)
+    Button btnActDateRangePicker;
 
     private Unbinder unbinder;
 
@@ -56,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ImageCircleActivity.class));
+            }
+        });
+
+        btnActDateRangePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DateRangePickerActivity.class));
             }
         });
     }

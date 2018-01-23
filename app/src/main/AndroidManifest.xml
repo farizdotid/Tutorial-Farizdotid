@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.farizdotid.tutorialfarizdotid">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_farizdotid"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_farizdotid_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -18,10 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RadioButtonExample" />
-        <activity android:name=".DatePickerActivity" />
-        <activity android:name=".EmailValidationActivity" />
-        <activity android:name=".ImageCircleActivity"></activity>
+        <activity android:name=".radiobutton.RadioButtonExample" />
+        <activity android:name=".datepicker.DatePickerActivity" />
+        <activity android:name=".emailvalidation.EmailValidationActivity" />
+        <activity android:name=".imagecircle.ImageCircleActivity" />
+        <activity android:name=".daterangepicker.DateRangePickerActivity"/>
     </application>
 
 </manifest>

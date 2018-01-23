@@ -32,4 +32,10 @@
         android:layout_height="wrap_content"
         android:text="IMAGE CIRCLE EXAMPLE"/>
 
+    <Button
+        android:id="@+id/btnActDateRangePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE RANGE PICKER EXAMPLE"/>
+
 </LinearLayout>

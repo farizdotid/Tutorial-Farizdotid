@@ -1,4 +1,4 @@
-package com.farizdotid.tutorialfarizdotid;
+package com.farizdotid.tutorialfarizdotid.imagecircle;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.farizdotid.tutorialfarizdotid.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

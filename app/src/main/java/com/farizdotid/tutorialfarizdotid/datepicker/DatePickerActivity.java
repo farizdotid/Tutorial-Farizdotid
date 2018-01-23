@@ -1,14 +1,15 @@
-package com.farizdotid.tutorialfarizdotid;
+package com.farizdotid.tutorialfarizdotid.datepicker;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
-import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+
+import com.farizdotid.tutorialfarizdotid.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

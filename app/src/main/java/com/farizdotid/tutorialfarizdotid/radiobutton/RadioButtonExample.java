@@ -1,4 +1,4 @@
-package com.farizdotid.tutorialfarizdotid;
+package com.farizdotid.tutorialfarizdotid.radiobutton;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.farizdotid.tutorialfarizdotid.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

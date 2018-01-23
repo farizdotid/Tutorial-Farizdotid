@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.farizdotid.tutorialfarizdotid.daterangepicker.DateRangePickerActivity">
+
+    <Button
+        android:id="@+id/btnOpenCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open calendar"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="START DATE : "
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="15 Februari 2018"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="END DATE : "
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="20 Februari 2018"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"/>
+</LinearLayout>
