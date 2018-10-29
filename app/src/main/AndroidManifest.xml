@@ -22,7 +22,8 @@
         <activity android:name=".datepicker.DatePickerActivity" />
         <activity android:name=".emailvalidation.EmailValidationActivity" />
         <activity android:name=".imagecircle.ImageCircleActivity" />
-        <activity android:name=".daterangepicker.DateRangePickerActivity"/>
+        <activity android:name=".daterangepicker.DateRangePickerActivity" />
+        <activity android:name=".adapterlistener.AdapterListenerActivity"></activity>
     </application>
 
 </manifest>

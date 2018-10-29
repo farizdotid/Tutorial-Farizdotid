@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Farizdotid Labs</string>
+    <string name="title_daftar_makanan_sunda">Daftar Makanan Sunda</string>
+    <string name="title_radio_button_example">RADIO BUTTON EXAMPLE</string>
+    <string name="title_date_picker_example">DATE PICKER EXAMPLE</string>
+    <string name="title_email_validation_example">EMAIL VALIDATION EXAMPLE</string>
+    <string name="title_image_circle_example">IMAGE CIRCLE EXAMPLE</string>
+    <string name="title_date_range_picker_example">DATE RANGE PICKER EXAMPLE</string>
+    <string name="title_adapter_click_listener">ADAPTER CLICK LISTENER</string>
 </resources>

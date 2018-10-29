@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,30 +12,36 @@
         android:id="@+id/btnActRadio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RADIO BUTTON EXAMPLE"/>
+        android:text="@string/title_radio_button_example"/>
 
     <Button
         android:id="@+id/btnActDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATE PICKER EXAMPLE"/>
+        android:text="@string/title_date_picker_example"/>
 
     <Button
         android:id="@+id/btnActEmailValidation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EMAIL VALIDATION EXAMPLE"/>
+        android:text="@string/title_email_validation_example"/>
 
     <Button
         android:id="@+id/btnActImageCircle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IMAGE CIRCLE EXAMPLE"/>
+        android:text="@string/title_image_circle_example"/>
 
     <Button
         android:id="@+id/btnActDateRangePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATE RANGE PICKER EXAMPLE"/>
+        android:text="@string/title_date_range_picker_example"/>
+
+    <Button
+        android:id="@+id/btnActAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_adapter_click_listener"/>
 
 </LinearLayout>

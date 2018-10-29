@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.farizdotid.tutorialfarizdotid.adapterlistener.AdapterListenerActivity;
 import com.farizdotid.tutorialfarizdotid.datepicker.DatePickerActivity;
 import com.farizdotid.tutorialfarizdotid.daterangepicker.DateRangePickerActivity;
 import com.farizdotid.tutorialfarizdotid.emailvalidation.EmailValidationActivity;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnActImageCircle;
     @BindView(R.id.btnActDateRangePicker)
     Button btnActDateRangePicker;
+    @BindView(R.id.btnActAdapter)
+    Button btnActAdapter;
 
     private Unbinder unbinder;
 
@@ -71,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DateRangePickerActivity.class));
+            }
+        });
+
+        btnActAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AdapterListenerActivity.class));
             }
         });
     }
