@@ -12,6 +12,7 @@ import com.farizdotid.tutorialfarizdotid.daterangepicker.DateRangePickerActivity
 import com.farizdotid.tutorialfarizdotid.emailvalidation.EmailValidationActivity;
 import com.farizdotid.tutorialfarizdotid.imagecircle.ImageCircleActivity;
 import com.farizdotid.tutorialfarizdotid.radiobutton.RadioButtonExample;
+import com.farizdotid.tutorialfarizdotid.tabgoogleplay.TabGooglePlayActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnActDateRangePicker;
     @BindView(R.id.btnActAdapter)
     Button btnActAdapter;
+    @BindView(R.id.btnActTabGooglePlay)
+    Button btnActTabGooglePlay;
 
     private Unbinder unbinder;
 
@@ -81,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AdapterListenerActivity.class));
+            }
+        });
+
+        btnActTabGooglePlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TabGooglePlayActivity.class));
             }
         });
     }

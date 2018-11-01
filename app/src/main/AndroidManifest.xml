@@ -23,7 +23,9 @@
         <activity android:name=".emailvalidation.EmailValidationActivity" />
         <activity android:name=".imagecircle.ImageCircleActivity" />
         <activity android:name=".daterangepicker.DateRangePickerActivity" />
-        <activity android:name=".adapterlistener.AdapterListenerActivity"></activity>
+        <activity android:name=".adapterlistener.AdapterListenerActivity" />
+        <activity android:name=".tabgoogleplay.TabGooglePlayActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
     </application>
 
 </manifest>

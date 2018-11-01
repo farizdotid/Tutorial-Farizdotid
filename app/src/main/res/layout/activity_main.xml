@@ -44,4 +44,9 @@
         android:layout_height="wrap_content"
         android:text="@string/title_adapter_click_listener"/>
 
+    <Button
+        android:id="@+id/btnActTabGooglePlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_tab_google_play"/>
 </LinearLayout>
