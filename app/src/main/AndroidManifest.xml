@@ -24,8 +24,10 @@
         <activity android:name=".imagecircle.ImageCircleActivity" />
         <activity android:name=".daterangepicker.DateRangePickerActivity" />
         <activity android:name=".adapterlistener.AdapterListenerActivity" />
-        <activity android:name=".tabgoogleplay.TabGooglePlayActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".tabgoogleplay.TabGooglePlayActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".glideloading.GlideLoadingActivity"></activity>
     </application>
 
 </manifest>

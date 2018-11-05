@@ -11,6 +11,7 @@ import com.farizdotid.tutorialfarizdotid.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,6 +34,9 @@ public class AdapterListenerActivity extends AppCompatActivity
         ButterKnife.bind(this);
         unbinder = ButterKnife.bind(this);
 
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.title_adapter_click_listener));
+
         makananAdapter = new MakananAdapter(this, getMakananSundaList(), this);
         rvMakanan.setLayoutManager(new LinearLayoutManager(this));
         rvMakanan.setItemAnimator(new DefaultItemAnimator());
@@ -53,15 +57,27 @@ public class AdapterListenerActivity extends AppCompatActivity
         makananSundaList.add(new MakananSunda(R.drawable.tumis_genjer_oncom, "Tumis Genjer Oncom"));
         return makananSundaList;
     }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 
     @Override
     public void onRowMakananAdapterClicked(int position) {
         String nama = getMakananSundaList().get(position).getNama();
         Toast.makeText(this, "Kamu memilih makanan " + nama, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
     }
 }

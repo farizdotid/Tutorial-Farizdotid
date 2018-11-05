@@ -1,52 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context="com.farizdotid.tutorialfarizdotid.MainActivity">
 
-    <Button
-        android:id="@+id/btnActRadio"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_radio_button_example"/>
+        android:padding="16dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnActDatePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_date_picker_example"/>
+        <Button
+            android:id="@+id/btnActRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_radio_button_example"/>
 
-    <Button
-        android:id="@+id/btnActEmailValidation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_email_validation_example"/>
+        <Button
+            android:id="@+id/btnActDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_date_picker_example"/>
 
-    <Button
-        android:id="@+id/btnActImageCircle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_image_circle_example"/>
+        <Button
+            android:id="@+id/btnActEmailValidation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_email_validation_example"/>
 
-    <Button
-        android:id="@+id/btnActDateRangePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_date_range_picker_example"/>
+        <Button
+            android:id="@+id/btnActImageCircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_image_circle_example"/>
 
-    <Button
-        android:id="@+id/btnActAdapter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_adapter_click_listener"/>
+        <Button
+            android:id="@+id/btnActDateRangePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_date_range_picker_example"/>
 
-    <Button
-        android:id="@+id/btnActTabGooglePlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_tab_google_play"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/btnActAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_adapter_click_listener"/>
+
+        <Button
+            android:id="@+id/btnActTabGooglePlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_tab_google_play"/>
+
+        <Button
+            android:id="@+id/btnActGlideLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/glide_loading_sample"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -17,6 +17,7 @@ import com.farizdotid.tutorialfarizdotid.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -40,9 +41,12 @@ public class DateRangePickerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_range_picker);
-        ButterKnife.bind(this);
 
+        ButterKnife.bind(this);
         unbinder = ButterKnife.bind(this);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.title_date_range_picker_example));
 
         btnOpenCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +93,17 @@ public class DateRangePickerActivity extends AppCompatActivity {
 
         pickerFrag.setStyle(DialogFragment.STYLE_NO_TITLE, 0);
         pickerFrag.show(getSupportFragmentManager(), "SUBLIME_PICKER");
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
     @Override

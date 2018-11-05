@@ -11,8 +11,11 @@ import android.widget.Toast;
 
 import com.farizdotid.tutorialfarizdotid.R;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public class RadioButtonExample extends AppCompatActivity {
 
@@ -27,13 +30,18 @@ public class RadioButtonExample extends AppCompatActivity {
     @BindView(R.id.btnJawab)
     Button btnJawab;
 
+    Unbinder unbinder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radio_button_example);
-        getSupportActionBar().setTitle("Radio Button Example");
 
         ButterKnife.bind(this);
+        unbinder = ButterKnife.bind(this);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.title_radio_button_example));
 
         btnJawab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,5 +63,22 @@ public class RadioButtonExample extends AppCompatActivity {
 
     private void showToast(String message){
         Toast.makeText(this, "" + message, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
     }
 }

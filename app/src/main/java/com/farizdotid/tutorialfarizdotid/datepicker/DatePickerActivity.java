@@ -13,9 +13,11 @@ import com.farizdotid.tutorialfarizdotid.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public class DatePickerActivity extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class DatePickerActivity extends AppCompatActivity {
     TextView tvTanggal;
 
     Calendar myCalendar;
+    Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,9 @@ public class DatePickerActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
         myCalendar = Calendar.getInstance();
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.title_date_picker_example));
 
         btnOpenDatePicker.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,5 +60,22 @@ public class DatePickerActivity extends AppCompatActivity {
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
     }
 }

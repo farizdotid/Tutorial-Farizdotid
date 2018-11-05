@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.farizdotid.tutorialfarizdotid.R;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -19,14 +21,19 @@ public class EmailValidationActivity extends AppCompatActivity {
     EditText etEmail;
     @BindView(R.id.btnCek)
     Button btnCek;
-    private Unbinder unbinder;
+
+    Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_validation);
+
         ButterKnife.bind(this);
         unbinder = ButterKnife.bind(this);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.title_email_validation_example));
 
         btnCek.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +64,17 @@ public class EmailValidationActivity extends AppCompatActivity {
         }
 
         return validate;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
     @Override

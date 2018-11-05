@@ -10,6 +10,7 @@ import com.farizdotid.tutorialfarizdotid.adapterlistener.AdapterListenerActivity
 import com.farizdotid.tutorialfarizdotid.datepicker.DatePickerActivity;
 import com.farizdotid.tutorialfarizdotid.daterangepicker.DateRangePickerActivity;
 import com.farizdotid.tutorialfarizdotid.emailvalidation.EmailValidationActivity;
+import com.farizdotid.tutorialfarizdotid.glideloading.GlideLoadingActivity;
 import com.farizdotid.tutorialfarizdotid.imagecircle.ImageCircleActivity;
 import com.farizdotid.tutorialfarizdotid.radiobutton.RadioButtonExample;
 import com.farizdotid.tutorialfarizdotid.tabgoogleplay.TabGooglePlayActivity;
@@ -34,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnActAdapter;
     @BindView(R.id.btnActTabGooglePlay)
     Button btnActTabGooglePlay;
+    @BindView(R.id.btnActGlideLoading)
+    Button btnActGlideLoading;
 
-    private Unbinder unbinder;
+    Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TabGooglePlayActivity.class));
+            }
+        });
+
+        btnActGlideLoading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GlideLoadingActivity.class));
             }
         });
     }

@@ -13,8 +13,11 @@ import android.widget.RelativeLayout;
 import com.farizdotid.tutorialfarizdotid.R;
 import com.lapism.searchview.widget.SearchView;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public class TabGooglePlayActivity extends AppCompatActivity {
 
@@ -28,12 +31,15 @@ public class TabGooglePlayActivity extends AppCompatActivity {
     RelativeLayout rlSearch;
 
     TabGooglePlayAdapter tabGooglePlayAdapter;
+    Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_google_play);
+
         ButterKnife.bind(this);
+        unbinder = ButterKnife.bind(this);
 
         setupTabLayout();
         searchView.setHint("Search Home");
@@ -122,5 +128,11 @@ public class TabGooglePlayActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(tab.getPosition());
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
     }
 }
