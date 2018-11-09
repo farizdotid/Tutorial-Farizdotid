@@ -27,7 +27,8 @@
         <activity
             android:name=".tabgoogleplay.TabGooglePlayActivity"
             android:theme="@style/AppThemeNoActionBar" />
-        <activity android:name=".glideloading.GlideLoadingActivity"></activity>
+        <activity android:name=".glideloading.GlideLoadingActivity" />
+        <activity android:name=".customfont.CustomFontActivity"></activity>
     </application>
 
 </manifest>

@@ -59,5 +59,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/glide_loading_sample"/>
+
+        <Button
+            android:id="@+id/btnCustomFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_custom_font"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
