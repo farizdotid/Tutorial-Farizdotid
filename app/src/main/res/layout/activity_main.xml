@@ -65,5 +65,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_custom_font"/>
+
+        <Button
+            android:id="@+id/btnRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_radius_glide"/>
+
+        <Button
+            android:id="@+id/btnWhatapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_open_whatsapp"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -10,4 +10,9 @@
     <string name="title_tab_google_play">TabLayout Google Play</string>
     <string name="glide_loading_sample">Glide Loading</string>
     <string name="title_custom_font">Custom Font</string>
+    <string name="title_radius_glide">Corner Radius Glide</string>
+    <string name="title_masukan_nomor_hp">Masukan Nomor HP</string>
+    <string name="title_buka_whatsapp">Buka Whatsapp</string>
+    <string name="error_message_form_empty">Form tidak boleh kosong</string>
+    <string name="title_open_whatsapp">Open Whatsapp</string>
 </resources>

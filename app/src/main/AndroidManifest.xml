@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_farizdotid_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".openwhatsapp.WhatsappActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +29,8 @@
             android:name=".tabgoogleplay.TabGooglePlayActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity android:name=".glideloading.GlideLoadingActivity" />
-        <activity android:name=".customfont.CustomFontActivity"></activity>
+        <activity android:name=".customfont.CustomFontActivity" />
+        <activity android:name=".cornerradius.CornerRadiusGlideActivity" />
     </application>
 
 </manifest>

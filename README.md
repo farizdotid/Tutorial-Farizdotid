@@ -35,7 +35,7 @@ Project ini berisi source code sederhana yang berasal dari tutorial web farizdot
 <img height="500" width="300" src="https://github.com/farizdotid/Tutorial-Farizdotid/blob/master/screenshot/ss-daterangepicker-1.png"/>
 <img height="500" width="300" src="https://github.com/farizdotid/Tutorial-Farizdotid/blob/master/screenshot/ss-daterangepicker-2.png"/>
 <br>
-
+● Adapter Click With Listener Example
 
 ## Catatan
 Semua tutorial pemrograman android sederhana yang ada di web saya akan saya update di repo ini.
